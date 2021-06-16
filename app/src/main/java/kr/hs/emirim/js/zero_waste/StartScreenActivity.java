@@ -8,6 +8,8 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+// dayeon-choi
+
 public class StartScreenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -18,7 +20,7 @@ public class StartScreenActivity extends AppCompatActivity {
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(StartScreenActivity.this, MainActivity.class);
+                Intent intent = new Intent(StartScreenActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
